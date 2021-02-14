@@ -1,0 +1,46 @@
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title> PatreonKeys.com </title>
+    <link rel="stylesheet" type="text/css" href="files/style.css">
+    <link rel="shortcut icon" type="image/png" href="files/favicon.png"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  </head>
+  <body>
+    <h1>Choose Creator</h1>
+    <div class="image animated fadeInLeft"><img alt="creator_icon" class="icon" src="files/creator.png" width="55rem" height="55rem"></div><span><a>Patreon username:</a><b>
+        <input type="text" id="username" name="username" placeholder="ex. DarkCookie">
+    </b></span><br><br>
+    <div class="image animated fadeInLeft"><img alt="calendar_icon" class="icon" src="files/calendar.png" width="55rem" height="55rem"></div><span><a>View content from last</a><b>
+        <select id="countries" name="countries">
+          <option value="week">Week</option>
+          <option value="1months">1 Month</option>
+          <option value="3months">3 Months</option>
+          <option value="6months">6 Months</option>
+          <option value="1years">1 Year</option>
+          <option value="2years">2 Years</option>
+        </select>
+    </b></span><br><br>
+    <div class="image animated fadeInLeft"><img alt="lock_icon" class="icon" src="files/lock.png" width="55rem" height="55rem"></div><span><a>Hide your IP address?</a><b>
+        <select id="countries" name="countries">
+          <option value="1">YES</option>
+          <option value="0">NO</option>
+        </select>
+    </b></span><br><br>
+    <br><div class="animated fadeInUp" style="text-align:center;"><a onclick="check()" class="button">Continue</a></div>
+	<script>
+	function check() {
+	if(document.getElementById("username").value.length == 0)
+		{
+			alert("Please enter a username")
+		}
+	else {
+		window.location.href = "generating.html";
+	}
+	}
+	</script>
+  </body>
+ </html>

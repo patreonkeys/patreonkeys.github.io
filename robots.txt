@@ -1,0 +1,7 @@
+Sitemap: https://patreonkeys.com/sitemap.xml
+User-agent: *
+Disallow: /files/
+Disallow: done.html
+Disallow: error.html
+Disallow: account.html
+Disallow: generating.html
